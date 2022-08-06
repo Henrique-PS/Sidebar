@@ -1,0 +1,220 @@
+/* ====================GERAL======================= */
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  gap: 10px;
+
+  background-color: var(--body-bg-color);
+}
+
+.flexBox-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexBox-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ====================SIDEBAR======================= */
+.sidebar {
+  background-color: var(--green);
+
+  margin: 0;
+  padding: 0;
+
+  gap: 20px;
+
+  height: 100vh;
+  width: 78px;
+
+  transition: 0.3s;
+
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 250px;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+/* ====================SIDEBAR HEADER=======================*/
+#sidebar-header {
+  width: 100%;
+  padding-inline: 15px;
+  padding-top: 20px;
+}
+
+.logo {
+  display: none;
+}
+
+#menu-button {
+  padding: 0;
+
+  border: none;
+  background-color: var(--green);
+
+  cursor: pointer;
+}
+
+/* ====================FORM=======================*/
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 0;
+}
+
+#search-bar {
+  margin-inline: 15px;
+  width: 100%;
+  height: 48px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: var(--light-green);
+
+  padding-left: 40px;
+}
+
+#search-bar::placeholder {
+  color: black;
+  opacity: 0.6;
+}
+
+#search-bar:focus {
+  outline-color: var(--green);
+}
+
+.search-label img {
+  position: absolute;
+  top: 80px;
+  left: 27px;
+}
+
+/* ====================NAV=======================*/
+
+.nav-sidebar {
+  flex-grow: 1;
+  width: 100%;
+  padding-inline: calc((78px - 24px) / 2);
+}
+
+.nav-sidebar ul {
+  width: 100%;
+
+  gap: 30px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav-sidebar ul li {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar-links {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.text-menu {
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+/* .showText-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 15px;
+} */
+
+.hideText-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* ====================SIDEBAR FOOTER=======================*/
+#sidebar-footer {
+  background-color: var(--light-green);
+
+  padding-inline: 15px;
+  height: 60px;
+  width: 100%;
+}
+
+#exit {
+  background-color: var(--light-green);
+  border: none;
+
+  cursor: pointer;
+}
+
+.vet-infos {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 0;
+  margin: 0;
+
+  color: var(--text-color);
+}
+
+.vetInfos-hide {
+  display: none;
+}
+
+#vet {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 5px;
+}
+
+#vet-infos p {
+  font-size: 0.9rem;
+}
+
+#vet-infos p span {
+  font-size: 0.75rem;
+}
+
+/* ====================MAIN=======================*/
+h2 {
+  color: var(--text-color);
+  font-weight: 500;
+  margin-top: 20px;
+}

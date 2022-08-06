@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sidebar</title>
+  </head>
+  <body class="container">
+    <aside class="container sidebar flexBox-sidebar">
+      <header id="sidebar-header" class="flexBox-sidebar">
+        <img src="./images/logo.svg" alt="logo" id="logo" class="logo" />
+        <button id="menu-button">
+          <img src="./images/menu.svg" alt="botao menu" />
+        </button>
+      </header>
+
+      <form id="form">
+        <label for="searchBar" class="search-label">
+          <img src="./images/search.svg" />
+        </label>
+        <input
+          type="search"
+          name="searchBar"
+          id="search-bar"
+          class="search-bar"
+          placeholder="Buscar"
+          size="12px"
+        />
+      </form>
+
+      <nav class="nav-sidebar">
+        <ul class="flexBox-sidebar">
+          <li>
+            <a href="#" class="sidebar-links">
+              <img src="./images/grid.svg" alt="dashboard" />
+              <span id="span" class="hideText-menu text-menu">Dashboard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="sidebar-links">
+              <img src="./images/pet.svg" alt="pets"/>
+              <span class="hideText-menu text-menu">Pets</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="sidebar-links">
+              <img src="./images/user.svg" alt="clientes" />
+              <span class="hideText-menu text-menu">Clientes</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="sidebar-links">
+              <img src="./images/vet.svg" alt="veterinarios" />
+              <span class="hideText-menu text-menu">Vets</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="sidebar-links">
+              <img src="./images/settings.svg" alt="configuracoes" />
+              <span class="hideText-menu text-menu">Ajustes</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="sidebar-footer" class="flexBox-sidebar">
+        <div id="vet-infos" class="vetInfos-hide">
+          <img src="./images/photo.jpg" alt="veterinaria" id="vet" />
+          <p>Eleanor Pena<br /><span>Veterinária</span></p>
+        </div>
+
+        <button id="exit">
+          <img src="./images/log-out.svg" alt="sair" />
+        </button>
+      </div>
+    </aside>
+
+    <h2>Dashboard</h2>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
